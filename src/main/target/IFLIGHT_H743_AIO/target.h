@@ -184,5 +184,5 @@
 
 #define USE_PINIO
 #define USE_PINIOBOX
-#define PINIO1_PIN                      E13
-#define PINIO2_PIN                      E14
+#define PINIO1_PIN                      PE13
+#define PINIO2_PIN                      PE14
