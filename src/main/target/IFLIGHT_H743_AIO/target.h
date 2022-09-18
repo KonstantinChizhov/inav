@@ -24,7 +24,7 @@
 
 #define LED0                    PC13
 
-#define BEEPER_PIN              PD15
+#define BEEPER                  PD15
 #define BEEPER_INVERTED
 
 // *************** SPI1 Gyro & ACC *******************
@@ -178,6 +178,11 @@
 #define TARGET_IO_PORTD 0xffff
 #define TARGET_IO_PORTE 0xffff
 
-#define MAX_PWM_OUTPUT_PORTS        4
+#define MAX_PWM_OUTPUT_PORTS        6
 #define USE_DSHOT
 #define USE_ESC_SENSOR
+
+#define USE_PINIO
+#define USE_PINIOBOX
+#define PINIO1_PIN                      E13
+#define PINIO2_PIN                      E14

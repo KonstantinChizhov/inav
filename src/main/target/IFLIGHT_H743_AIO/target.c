@@ -27,10 +27,15 @@
 #include "drivers/sensor.h"
 
 timerHardware_t timerHardware[] = {
-    DEF_TIM(TIM3, CH3, PB0,  TIM_USE_MC_MOTOR | TIM_USE_FW_MOTOR,                       0, 0), // M1
-    DEF_TIM(TIM3, CH4, PB1,  TIM_USE_MC_MOTOR | TIM_USE_FW_MOTOR,                       0, 1), // M2
-    DEF_TIM(TIM1, CH1, PE9,  TIM_USE_MC_MOTOR | TIM_USE_FW_MOTOR,                       0, 2), // M3
-    DEF_TIM(TIM1, CH2, PE11, TIM_USE_MC_MOTOR | TIM_USE_FW_MOTOR,                       0, 3), // M4
+    DEF_TIM(TIM3, CH3, PB0,  TIM_USE_MC_MOTOR | TIM_USE_FW_MOTOR,                                       0, 0), // M1
+    DEF_TIM(TIM3, CH4, PB1,  TIM_USE_MC_MOTOR | TIM_USE_FW_MOTOR,                                       0, 1), // M2
+    DEF_TIM(TIM1, CH1, PE9,  TIM_USE_MC_MOTOR | TIM_USE_FW_MOTOR,                                       0, 2), // M3
+    DEF_TIM(TIM1, CH2, PE11, TIM_USE_MC_MOTOR | TIM_USE_FW_MOTOR,                                       0, 3), // M4
+    
+    DEF_TIM(TIM3, CH1, PB4,  TIM_USE_MC_MOTOR | TIM_USE_FW_MOTOR | TIM_USE_MC_SERVO | TIM_USE_FW_SERVO, 0, 4), // M5
+    DEF_TIM(TIM3, CH2, PB5,  TIM_USE_MC_MOTOR | TIM_USE_FW_MOTOR | TIM_USE_MC_SERVO | TIM_USE_FW_SERVO, 0, 5), // M6
+
+    // DEF_TIM(TIM2,  CH1, PA15, TIM_USE_BEEPER, 0, 0),  // BEEPER PWM
 
     DEF_TIM( TIM1, CH1, PA8, TIM_USE_LED,             0, 4) // LED_2812
 };
